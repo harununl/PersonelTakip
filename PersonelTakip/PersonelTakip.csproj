@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A9DE7A9-229F-4DCC-8FC5-887BD85C3EEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PersonelTakip</RootNamespace>
+    <AssemblyName>PersonelTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Departman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departman.Designer.cs">
+      <DependentUpon>Departman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmanEkle.Designer.cs">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="isDetay.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsBilgileri.Designer.cs">
+      <DependentUpon>IsBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsListesi.Designer.cs">
+      <DependentUpon>IsListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izin Bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izin Bilgileri.Designer.cs">
+      <DependentUpon>Izin Bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzınListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzınListesi.Designer.cs">
+      <DependentUpon>IzınListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaasBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaasBilgileri.Designer.cs">
+      <DependentUpon>MaasBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaasListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaasListesi.Designer.cs">
+      <DependentUpon>MaasListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelData.cs" />
+    <Compile Include="PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pozisyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pozisyon.Designer.cs">
+      <DependentUpon>Pozisyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PozisyonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PozisyonEkle.Designer.cs">
+      <DependentUpon>PozisyonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Departman.resx">
+      <DependentUpon>Departman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmanEkle.resx">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsBilgileri.resx">
+      <DependentUpon>IsBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsListesi.resx">
+      <DependentUpon>IsListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izin Bilgileri.resx">
+      <DependentUpon>Izin Bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzınListesi.resx">
+      <DependentUpon>IzınListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaasBilgileri.resx">
+      <DependentUpon>MaasBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaasListesi.resx">
+      <DependentUpon>MaasListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pozisyon.resx">
+      <DependentUpon>Pozisyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PozisyonEkle.resx">
+      <DependentUpon>PozisyonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
